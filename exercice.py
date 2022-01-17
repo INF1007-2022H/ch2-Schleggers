@@ -3,7 +3,10 @@
 def majuscule(mot):
     x=''
     for n in mot:
-        x+= chr(ord(n)-32)
+        if 97<= ord(n) <= 122:
+            x+= chr(ord(n)-32)
+        else:
+            x+=n
     mot = x
     return mot
 
