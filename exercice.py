@@ -1,7 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 def majuscule(mot):
-    # TODO completer la fonction ici
+    x=''
+    for n in mot:
+        x+= chr(ord(n)-32)
+    mot = x
     return mot
 
 
